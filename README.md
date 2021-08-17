@@ -2,6 +2,7 @@
 
 ## Engines
 
+- [esbeltoJS](https://github.com/Levyks/esbeltoJS) v1.0.3
 - [CoffeeKup](https://github.com/mauricemach/coffeekup) v0.3.1 ([website](http://coffeekup.org/))
 - [doT](https://github.com/olado/doT) v1.0.1 ([website](http://olado.github.com/doT/))
 - [Dust](https://github.com/linkedin/dustjs) v1.2.1 ([website](http://linkedin.github.com/dustjs/))
@@ -18,92 +19,97 @@
 
 ## Test environment
 
-- CPU: Intel Core i5 450M 2.4Ghz
-- OS: Ubuntu Server 12.04
-- Node.JS version: 0.8.21
+- CPU: Intel Core i3-10100F 3.6Ghz
+- OS: Windows 10 Home 21H1
+- Node.JS version: 14.16.0
 
 ## Results
 
 	Rendering 100000 templates:
 
 	ECT
-	  Escaped   : 2180ms
-	  Unescaped : 133ms
-	  Total     : 2313ms
+		Escaped   : 1343ms
+		Unescaped : 54ms
+		Total     : 1397ms
 
 	Dust
-	  Escaped   : 2547ms
-	  Unescaped : 363ms
-	  Total     : 2910ms
+		Escaped   : 1603ms
+		Unescaped : 174ms
+		Total     : 1777ms
 
 	Hogan.js
-	  Escaped   : 3252ms
-	  Unescaped : 758ms
-	  Total     : 4010ms
+		Escaped   : 1534ms
+		Unescaped : 198ms
+		Total     : 1732ms
 
 	Gaikan
-	  Escaped   : 4288ms
-	  Unescaped : 85ms
-	  Total     : 4373ms
+		Escaped   : 1095ms
+		Unescaped : 41ms
+		Total     : 1136ms
 
 	Fest
-	  Escaped   : 4179ms
-	  Unescaped : 265ms
-	  Total     : 4444ms
+		Escaped   : 1041ms
+		Unescaped : 44ms
+		Total     : 1085ms
 
 	EJS without `with`
-	  Escaped   : 4526ms
-	  Unescaped : 485ms
-	  Total     : 5011ms
+		Escaped   : 2089ms
+		Unescaped : 209ms
+		Total     : 2298ms
 
 	doT
-	  Escaped   : 5329ms
-	  Unescaped : 82ms
-	  Total     : 5411ms
+		Escaped   : 1582ms
+		Unescaped : 33ms
+		Total     : 1615ms
 
 	Swig
-	  Escaped   : 5020ms
-	  Unescaped : 407ms
-	  Total     : 5427ms
+		Escaped   : 2138ms
+		Unescaped : 73ms
+		Total     : 2211ms
 
 	Underscore
-	  Escaped   : 5775ms
-	  Unescaped : 2486ms
-	  Total     : 8261ms
-
-	Eco
-	  Escaped   : 8512ms
-	  Unescaped : 991ms
-	  Total     : 9503ms
+		Escaped   : 1304ms
+		Unescaped : 823ms
+		Total     : 2127ms
 
 	EJS
-	  Escaped   : 6316ms
-	  Unescaped : 2734ms
-	  Total     : 9050ms
+		Escaped   : 3941ms
+		Unescaped : 1464ms
+		Total     : 5405ms
+
+	Eco
+		Escaped   : 2454ms
+		Unescaped : 301ms
+		Total     : 2755ms
 
 	Handlebars.js
-	  Escaped   : 7815ms
-	  Unescaped : 2573ms
-	  Total     : 10388ms
+		Escaped   : 1430ms
+		Unescaped : 318ms
+		Total     : 1748ms
 
 	Jade without `with`
-	  Escaped   : 8566ms
-	  Unescaped : 2982ms
-	  Total     : 11548ms
+		Escaped   : 2218ms
+		Unescaped : 359ms
+		Total     : 2577ms
 
 	CoffeeKup
-	  Escaped   : 4968ms
-	  Unescaped : 9983ms
-	  Total     : 14951ms
+		Escaped   : 819ms
+		Unescaped : 2364ms
+		Total     : 3183ms
 
 	Jade
-	  Escaped   : 18330ms
-	  Unescaped : 12095ms
-	  Total     : 30425ms
+		Escaped   : 4776ms
+		Unescaped : 2867ms
+		Total     : 7643ms
+
+	esbeltoJS
+		Escaped   : 3356ms
+		Unescaped : 1515ms
+		Total     : 4871ms
 
 ## Usage
 
-	git clone git://github.com/baryshev/template-benchmark.git
+	git clone git://github.com/levyks/template-benchmark.git
 	cd template-benchmark
 	npm install
 	node ./benchmark.js

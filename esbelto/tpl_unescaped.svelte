@@ -1,0 +1,18 @@
+<script id="esbelto">
+  let {title, text, projects} = getVariables();
+</script>
+
+<head>
+  <title>{title}</title>
+</head>
+<body>
+  <p>{text}</p>
+  {#if projects.length}
+    {#each projects as project}
+      <a href="{project.url}">{project.name}</a>
+      <p>{project.description}</p>
+    {/each}
+  {:else}
+    No projects
+  {/if}
+</body>

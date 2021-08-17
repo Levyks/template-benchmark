@@ -1,6 +1,7 @@
 var data = require('./data');
 
 var count = 100000;
+var esbelto = require('./esbelto/esbelto.js');
 var ect = require('./ect/ect.js');
 var ejs = require('./ejs/ejs.js');
 var ejsWithoutWith = require('./ejs-without-with/ejs.js');
@@ -55,6 +56,7 @@ var testUnescaped = function(name, sample, cb) {
 
 var samples = [
 
+	{ name : 'esbeltoJS', sample : esbelto },
 	{ name : 'Jade', sample : jade },
 	{ name : 'CoffeeKup', sample : coffeekup },
 	{ name : 'Jade without `with`', sample : jadeWithoutWith },
