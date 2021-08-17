@@ -5,10 +5,9 @@ var esbelto = require('./esbelto/esbelto.js');
 var ect = require('./ect/ect.js');
 var ejs = require('./ejs/ejs.js');
 var ejsWithoutWith = require('./ejs-without-with/ejs.js');
-var jade = require('./jade/jade.js');
-var jadeWithoutWith = require('./jade-without-with/jade.js');
+var pug = require('./pug/pug.js');
+var pugWithoutWith = require('./pug-without-with/pug.js');
 var eco = require('./eco/eco.js');
-var swig = require('./swig/swig.js');
 var hogan = require('./hogan/hogan.js');
 var dust = require('./dust/dust.js');
 var fest = require('./fest/fest.js');
@@ -16,7 +15,6 @@ var dot = require('./dot/dot.js');
 var handlebars = require('./handlebars/handlebars.js');
 var coffeekup = require('./coffeekup/coffeekup.js');
 var underscore = require('./underscore/underscore.js');
-var gaikan = require('./gaikan/gaikan.js');
 
 var test = function(name, sample, cb) {
 	var i = 0;
@@ -57,18 +55,16 @@ var testUnescaped = function(name, sample, cb) {
 var samples = [
 
 	{ name : 'esbeltoJS', sample : esbelto },
-	{ name : 'Jade', sample : jade },
+	{ name : 'Pug', sample : pug },
 	{ name : 'CoffeeKup', sample : coffeekup },
-	{ name : 'Jade without `with`', sample : jadeWithoutWith },
+	{ name : 'Pug without `with`', sample : pugWithoutWith },
 	{ name : 'Handlebars.js', sample : handlebars },
 	{ name : 'Eco', sample : eco },
 	{ name : 'EJS', sample : ejs },
 	{ name : 'Underscore', sample : underscore },
-	{ name : 'Swig', sample : swig },
 	{ name : 'doT', sample : dot },
 	{ name : 'EJS without `with`', sample : ejsWithoutWith },
 	{ name : 'Fest', sample : fest },
-	{ name : 'Gaikan', sample: gaikan },
 	{ name : 'Hogan.js', sample : hogan },
 	{ name : 'Dust', sample : dust },
 	{ name : 'ECT', sample : ect }

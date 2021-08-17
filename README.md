@@ -4,18 +4,16 @@
 
 - [esbeltoJS](https://github.com/Levyks/esbeltoJS) v1.0.3
 - [CoffeeKup](https://github.com/mauricemach/coffeekup) v0.3.1 ([website](http://coffeekup.org/))
-- [doT](https://github.com/olado/doT) v1.0.1 ([website](http://olado.github.com/doT/))
-- [Dust](https://github.com/linkedin/dustjs) v1.2.1 ([website](http://linkedin.github.com/dustjs/))
+- [doT](https://github.com/olado/doT) v1.1.3 ([website](http://olado.github.com/doT/))
+- [Dust](https://github.com/linkedin/dustjs) v2.7.5 ([website](http://linkedin.github.com/dustjs/))
 - [Eco](https://github.com/sstephenson/eco) v1.1.0-rc-3
-- [ECT](https://github.com/baryshev/ect) v0.4.8 ([website](http://ectjs.com/))
-- [EJS](https://github.com/visionmedia/ejs) v0.8.3
-- [Fest](https://github.com/mailru/fest) v0.5.4
-- [Gaikan](https://github.com/Deathspike/gaikan) v1.3.4
-- [Handlebars.js](https://github.com/wycats/handlebars.js/) v1.0.9 ([website](http://handlebarsjs.com/))
-- [Hogan.js](https://github.com/twitter/hogan.js) v2.0.0 ([website](http://twitter.github.com/hogan.js/))
-- [Jade](https://github.com/visionmedia/jade) v0.28.1 ([website](http://jade-lang.com/))
-- [Swig](https://github.com/paularmstrong/swig) v0.13.5
-- [Underscore](https://github.com/documentcloud/underscore) v1.4.4 ([website](http://underscorejs.org/))
+- [ECT](https://github.com/baryshev/ect) v0.5.9 ([website](http://ectjs.com/))
+- [EJS](https://github.com/visionmedia/ejs) v3.1.6
+- [Fest](https://github.com/mailru/fest) v0.12.4
+- [Handlebars.js](https://github.com/wycats/handlebars.js/) v4.7.7 ([website](http://handlebarsjs.com/))
+- [Hogan.js](https://github.com/twitter/hogan.js) v3.0.2 ([website](http://twitter.github.com/hogan.js/))
+- [Pug](https://github.com/pugjs/pug/tree/master/packages/pug) v3.0.2 ([website](https://pugjs.org/))
+- [Underscore](https://github.com/documentcloud/underscore) v1.13.1 ([website](http://underscorejs.org/))
 
 ## Test environment
 
@@ -28,84 +26,74 @@
 	Rendering 100000 templates:
 
 	ECT
-		Escaped   : 1343ms
-		Unescaped : 54ms
-		Total     : 1397ms
+		Escaped   : 1263ms
+		Unescaped : 51ms
+		Total     : 1314ms
 
 	Dust
-		Escaped   : 1603ms
-		Unescaped : 174ms
-		Total     : 1777ms
+		Escaped   : 1748ms
+		Unescaped : 404ms
+		Total     : 2152ms
 
 	Hogan.js
-		Escaped   : 1534ms
-		Unescaped : 198ms
-		Total     : 1732ms
-
-	Gaikan
-		Escaped   : 1095ms
-		Unescaped : 41ms
-		Total     : 1136ms
+		Escaped   : 1502ms
+		Unescaped : 185ms
+		Total     : 1687ms
 
 	Fest
-		Escaped   : 1041ms
-		Unescaped : 44ms
-		Total     : 1085ms
+		Escaped   : 960ms
+		Unescaped : 47ms
+		Total     : 1007ms
 
 	EJS without `with`
-		Escaped   : 2089ms
-		Unescaped : 209ms
-		Total     : 2298ms
+		Escaped   : 1252ms
+		Unescaped : 42ms
+		Total     : 1294ms
 
 	doT
-		Escaped   : 1582ms
-		Unescaped : 33ms
-		Total     : 1615ms
-
-	Swig
-		Escaped   : 2138ms
-		Unescaped : 73ms
-		Total     : 2211ms
+		Escaped   : 1563ms
+		Unescaped : 32ms
+		Total     : 1595ms
 
 	Underscore
-		Escaped   : 1304ms
-		Unescaped : 823ms
-		Total     : 2127ms
+		Escaped   : 1289ms
+		Unescaped : 882ms
+		Total     : 2171ms
 
 	EJS
-		Escaped   : 3941ms
-		Unescaped : 1464ms
-		Total     : 5405ms
+		Escaped   : 3467ms
+		Unescaped : 1744ms
+		Total     : 5211ms
 
 	Eco
-		Escaped   : 2454ms
-		Unescaped : 301ms
-		Total     : 2755ms
+		Escaped   : 2594ms
+		Unescaped : 295ms
+		Total     : 2889ms
 
 	Handlebars.js
-		Escaped   : 1430ms
-		Unescaped : 318ms
-		Total     : 1748ms
+		Escaped   : 1858ms
+		Unescaped : 666ms
+		Total     : 2524ms
 
-	Jade without `with`
-		Escaped   : 2218ms
-		Unescaped : 359ms
-		Total     : 2577ms
+	Pug without `with`
+		Escaped   : 3684ms
+		Unescaped : 29ms
+		Total     : 3713ms
 
 	CoffeeKup
-		Escaped   : 819ms
-		Unescaped : 2364ms
-		Total     : 3183ms
+		Escaped   : 861ms
+		Unescaped : 2502ms
+		Total     : 3363ms
 
-	Jade
-		Escaped   : 4776ms
-		Unescaped : 2867ms
-		Total     : 7643ms
+	Pug
+		Escaped   : 3992ms
+		Unescaped : 46ms
+		Total     : 4038ms
 
 	esbeltoJS
-		Escaped   : 3356ms
-		Unescaped : 1515ms
-		Total     : 4871ms
+		Escaped   : 3530ms
+		Unescaped : 1621ms
+		Total     : 5151ms
 
 ## Usage
 
