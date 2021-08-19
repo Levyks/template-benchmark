@@ -1,17 +1,16 @@
 <script id="esbelto">
-  let escape = getEscape();
   let {title, text, projects} = getVariables();
 </script>
 
 <head>
-  <title>{escape(title)}</title>
+  <title>{title}</title>
 </head>
 <body>
-  <p>{escape(text)}</p>
+  <p>{text}</p>
   {#if projects.length}
     {#each projects as project}
-      <a href="{escape(project.url)}">{escape(project.name)}</a>
-      <p>{escape(project.description)}</p>
+      <a href="{project.url}">{project.name}</a>
+      <p>{project.description}</p>
     {/each}
   {:else}
     No projects

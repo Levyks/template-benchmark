@@ -3,14 +3,14 @@
 </script>
 
 <head>
-  <title>{title}</title>
+  <title>{@html title}</title>
 </head>
 <body>
-  <p>{text}</p>
+  <p>{@html text}</p>
   {#if projects.length}
     {#each projects as project}
-      <a href="{project.url}">{project.name}</a>
-      <p>{project.description}</p>
+      <a href="{@html project.url}">{@html project.name}</a>
+      <p>{@html project.description}</p>
     {/each}
   {:else}
     No projects
