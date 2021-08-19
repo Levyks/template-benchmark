@@ -2,7 +2,7 @@
 
 ## Engines
 
-- [esbeltoJS](https://github.com/Levyks/esbeltoJS) v2.0.0
+- [esbeltoJS](https://github.com/Levyks/esbeltoJS) v2.0.1
 - [CoffeeKup](https://github.com/mauricemach/coffeekup) v0.3.1 ([website](http://coffeekup.org/))
 - [doT](https://github.com/olado/doT) v1.1.3 ([website](http://olado.github.com/doT/))
 - [Dust](https://github.com/linkedin/dustjs) v2.7.5 ([website](http://linkedin.github.com/dustjs/))
@@ -26,74 +26,74 @@
 	Rendering 100000 templates:
 
 	esbeltoJS
-	 Escaped   : 1374ms
-	 Unescaped : 43ms
-	 Total     : 1417ms
+	 Escaped   : 1334ms
+	 Unescaped : 39ms
+	 Total     : 1373ms
 
 	EJS
-	 Escaped   : 3251ms
-	 Unescaped : 1630ms
-	 Total     : 4881ms
+	 Escaped   : 3090ms
+	 Unescaped : 1443ms
+	 Total     : 4533ms
 
 	EJS without `with`
-	 Escaped   : 1276ms
-	 Unescaped : 44ms
-	 Total     : 1320ms
+	 Escaped   : 1288ms
+	 Unescaped : 50ms
+	 Total     : 1338ms
 
 	Pug
-	 Escaped   : 3949ms
-	 Unescaped : 41ms
-	 Total     : 3990ms
+	 Escaped   : 4063ms
+	 Unescaped : 47ms
+	 Total     : 4110ms
 
 	Pug without `with`
-	 Escaped   : 3487ms
-	 Unescaped : 28ms
-	 Total     : 3515ms
+	 Escaped   : 3594ms
+	 Unescaped : 27ms
+	 Total     : 3621ms
 
 	Handlebars.js
-	 Escaped   : 1738ms
-	 Unescaped : 631ms
-	 Total     : 2369ms
+	 Escaped   : 1742ms
+	 Unescaped : 657ms
+	 Total     : 2399ms
 
 	ECT
-	 Escaped   : 1246ms
-	 Unescaped : 52ms
-	 Total     : 1298ms
+	 Escaped   : 1256ms
+	 Unescaped : 53ms
+	 Total     : 1309ms
 
 	Dust
-	 Escaped   : 1737ms
-	 Unescaped : 401ms
-	 Total     : 2138ms
+	 Escaped   : 1826ms
+	 Unescaped : 398ms
+	 Total     : 2224ms
 
 	Hogan.js
-	 Escaped   : 1511ms
-	 Unescaped : 193ms
+	 Escaped   : 1515ms
+	 Unescaped : 189ms
 	 Total     : 1704ms
 
 	Fest
-	 Escaped   : 995ms
-	 Unescaped : 45ms
-	 Total     : 1040ms
+	 Escaped   : 1022ms
+	 Unescaped : 51ms
+	 Total     : 1073ms
 
 	doT
-	 Escaped   : 1601ms
-	 Unescaped : 34ms
-	 Total     : 1635ms
+	 Escaped   : 1634ms
+	 Unescaped : 33ms
+	 Total     : 1667ms
 
 	Underscore
-	 Escaped   : 1281ms
-	 Unescaped : 873ms
-	 Total     : 2154ms
+	 Escaped   : 1309ms
+	 Unescaped : 864ms
+	 Total     : 2173ms
 
 	Eco
-	 Escaped   : 2531ms
-	 Unescaped : 332ms
-	 Total     : 2863ms
+	 Escaped   : 2521ms
+	 Unescaped : 333ms
+	 Total     : 2854ms
 
 	CoffeeKup
-	 Escaped   : 844ms
-	 Unescaped : 2513ms
-	 Total     : 3357ms
+	 Escaped   : 906ms
+	 Unescaped : 2792ms
+	 Total     : 3698ms
 
 ## Usage
 
